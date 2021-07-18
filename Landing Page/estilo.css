@@ -1,0 +1,250 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+
+body{
+	font-family: "Trebuchet MS", Helvetica, sans-serif;
+	background: url(img/background.jpg);
+}
+
+/* início top do site com Form, imagem lateral, ícones e logo*/
+
+#topo {
+	min-width: 100%;
+	height: 529px;
+	background: black;
+	position: relative;
+	padding: 150px 0px 0px 0px;
+	display: block;
+	z-index: 2;
+	
+}
+
+	/*início logo*/
+
+#logomarca {
+	width: 150px;
+	margin-left: 50px;
+}
+#logomarca h1{
+	color: yellow;
+	font-style: italic;
+	font-size: 3em;
+}
+#logomarca i{
+	color: #fff;
+}
+
+	/*fim logo*/
+
+
+		/*início imagem lateral*/
+
+#imgtopo {
+	height: 499px;
+	width: 382px;
+	float: right;
+	border: 3px #f3eaea4a solid;
+	border-radius: 6px;
+	position:initial;
+	top: 0px;
+	right: 25px;
+	
+}
+
+		/*fim imagem lateral*/
+
+	/*início form*/
+
+#mainForm {
+	width: 275px;
+	height: auto;
+	background: gold;
+	margin: 0px auto 0px;
+	border-radius: 10px;
+	border-style: outset;
+	border-width: 3px;
+	border-color: Yellow goldenrod;
+	display: block;
+	
+}
+#mainForm label{
+	color: rgb(73, 50, 50);
+	font-size: 0.8em;
+} 
+#mainForm form {
+	padding: 3px;
+	text-align: center;
+}
+#mainForm input{
+	width: 75%;
+}
+#mainForm h1 {
+	color: black;
+	text-align: center;
+	padding: 30px 0px 0px 0px;
+}
+#enviar {
+	background: #000;
+	border-radius: .5rem;
+	width: 120px;
+	height: 40px;
+	margin: 30px 0px 30px;
+}
+#enviar p {
+	color: #fff;
+}
+#enviar :hover{
+	background-color: #fff;
+	color: black;
+	border-radius: .5rem;
+	width: 120px;
+	height: 40px;
+	text-align: center;
+	
+}
+
+	/*fim form*/
+
+	/*início slogan*/
+
+#slogan {
+	background: black;
+	float: left;
+	width: 200px;
+	height: 270px;
+	margin: 75px 75px;
+	position: relative;
+	display: inline;
+	
+}
+#slogan h2{
+	color: #fff;
+	background: black;
+	font-size: 24px;
+
+}
+#appIcons h2 {
+	background: black;
+	float: left;
+}
+#appIcons{
+	width: 300px;
+	height: 100px;
+	float: bottom;
+	clear: both;
+	position: relative;
+	margin-top:75px ;
+}
+#appIcons img{
+	float: left;
+	width: 60%;
+	height: 45%;
+	padding-top: 5px ;
+}
+
+/*fim slogan*/
+
+/*Fim topo do site*/
+
+/*início container*/
+
+#container {
+	height: auto;
+	width: 50%;
+	background: white;
+	border: 5px ;
+	border-style:groove;
+	border-color:rgba(230, 227, 227, 0.892) rgb(194, 178, 178);	
+	position: relative;
+	margin: 100px auto 100px;
+	text-align: center;
+}
+#container img{
+	margin: 0px auto;
+	width: 65%;
+	height: 65%;
+}
+
+#texto{
+	
+	width: 85%;
+	text-align: center;
+	margin: 50px auto;
+}
+#texto p {
+	margin: 0px auto;
+	padding: 0px auto;
+	text-align: center;
+}
+
+/*fim container*/
+
+#rodape {
+	width: 100%;
+	height: 120px;
+	background-color: #000;
+	color: #fff;
+	text-align: center;
+	padding: 50px;
+	margin-right: auto;
+	
+}
+#rodape h1{
+	margin: 30px,0px,0px;
+	align-items: center;
+}
+
+
+@media screen and (min-width: 1500px) {
+	#imgtopo{
+		height:600px;
+		width:462px;
+		margin: 0px 80px;
+	}
+	
+}
+
+@media screen and (max-width: 1100px) {
+
+ 	#imgtopo{
+		display: none;
+	} 	
+	#mainForm p h2 input,  #slogan, #logomarca, #topo{
+		display: block;
+		}
+}
+
+@media screen and (max-width: 900px){
+	#topo {
+		height: auto;
+	}
+
+	  #slogan, #appIcons, #texto{
+		float: none;
+		margin: 30px auto 0px ;
+		text-align: center;
+		padding: 0px;
+		}
+		#logomarca{
+			float: none;
+			margin: 0px auto;
+		}
+		#container p {
+			display: block;
+			margin: auto;
+			padding: 30px;
+		}
+		#container h1{
+			display: block;
+			margin: auto 0px;
+			padding: 30px;
+		}
+		
+
+		#mainForm p h2 input,  #slogan, #logomarca, #topo{
+			display: block;
+			}
+	}
+	

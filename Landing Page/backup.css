@@ -1,0 +1,148 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+
+body{
+	font-family: "Trebuchet MS", Helvetica, sans-serif;
+	background: url(img/background.jpg);
+}
+
+#topo {
+	min-width: 100%;
+	height: 529px;
+	background: black;
+	position: relative;
+	padding: 150px 0px 0px 0px;
+	display: block;
+	z-index: 2;
+	
+}
+
+#logomarca {
+	width: 150px;
+	
+	margin-left: 50px;
+}
+#logomarca h1{
+	color: yellow;
+	font-style: italic;
+	font-size: 3em;
+}
+#logomarca i{
+	color: #fff;
+}
+#imgtopo {
+	height: 519px;
+	width: 402px;
+	float: right;
+	border: 3px #f3eaea4a solid;
+	border-radius: 6px;
+	position:initial;
+	top: 0px;
+	right: 25px;
+}
+
+#mainForm {
+	width: 275px;
+	height: 550px;
+	background: gold;
+	margin: 0px auto 0px;
+	border-radius: 10px;
+	border-style: outset;
+	border-width: 3px;
+	border-color: Yellow goldenrod;
+	
+}
+#mainForm p{
+	color: rgb(73, 50, 50);
+} 
+#mainForm form {
+	padding: 3px;
+	text-align: center;
+}
+#mainForm input{
+	width: 85%;
+}
+#mainForm h1 {
+	color: black;
+	text-align: center;
+	padding: 30px 0px 0px 0px;
+}
+
+#slogan {
+	background: black;
+	float: left;
+	width: 200px;
+	height: 270px;
+	margin: 75px 75px;
+	position: relative;
+	display: inline;
+	
+}
+#slogan h2{
+	color: #fff;
+	background: black;
+	font-size: 24px;
+
+}
+#appIcons h2 {
+	background: black;
+	float: left;
+}
+#appIcons{
+	width: 300px;
+	height: 100px;
+	float: bottom;
+	clear: both;
+	position: relative;
+	margin-top:75px ;
+}
+#appIcons img{
+	float: left;
+	width: 60%;
+	height: 45%;
+	padding-top: 5px ;
+}
+
+#container {
+	height: 500px;
+	width: 75%;
+	background: white;
+	border: 5px ;
+	border-style:groove;
+	border-color:rgba(230, 227, 227, 0.892) rgb(194, 178, 178);	
+	position: static;
+	margin: 100px auto 100px;
+
+}
+#texto{
+	
+	width: 500px;
+	text-align: center;
+	margin: 50px auto;
+}
+#texto p {
+	margin: 0px auto;
+	padding: 0px auto;
+	text-align: center;
+}
+@media screen and (max-width: 600px) {
+	#topo, #container, #mainForm #slogan #appIcons{
+		width: 90%;
+		padding: none;
+		display: flex;
+		position: static;
+		margin: 10px auto;
+	} 
+	#imgtopo #mainForm p form {
+		position: static;
+		display: block;
+	}
+	body {
+		background: none;
+	}
+}
+
+
+
