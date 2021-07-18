@@ -6,18 +6,18 @@
 body{
 	font-family: "Trebuchet MS", Helvetica, sans-serif;
 	background: url(img/background.jpg);
+	overflow: scroll;
 }
 
 /* início top do site com Form, imagem lateral, ícones e logo*/
 
 #topo {
-	min-width: 100%;
+	width: 100%;
 	height: 529px;
 	background: black;
-	position: relative;
-	padding: 150px 0px 0px 0px;
+	position: static;
+	padding: 100px 50px 0px 50px;
 	display: block;
-	z-index: 2;
 	
 }
 
@@ -61,7 +61,7 @@ body{
 	width: 275px;
 	height: auto;
 	background: gold;
-	margin: 0px auto 0px;
+	margin: 0px auto 0px auto;
 	border-radius: 10px;
 	border-style: outset;
 	border-width: 3px;
@@ -158,8 +158,10 @@ body{
 	border-style:groove;
 	border-color:rgba(230, 227, 227, 0.892) rgb(194, 178, 178);	
 	position: relative;
-	margin: 100px auto 100px;
+	margin: 100px auto 100px ;
+	padding: auto;
 	text-align: center;
+	justify-content: center;
 }
 #container img{
 	margin: 0px auto;
@@ -219,6 +221,8 @@ body{
 @media screen and (max-width: 900px){
 	#topo {
 		height: auto;
+		width: 100%;
+			
 	}
 
 	  #slogan, #appIcons, #texto{
@@ -231,10 +235,17 @@ body{
 			float: none;
 			margin: 0px auto;
 		}
+		#container{
+			flex-direction: row;
+			justify-content: center;
+			align-items: center;
+			display: block;
+			width: 75%;
+		}
 		#container p {
 			display: block;
 			margin: auto;
-			padding: 30px;
+			justify-content: center;
 		}
 		#container h1{
 			display: block;
